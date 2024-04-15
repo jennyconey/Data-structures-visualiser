@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cactus Stack</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="array.html">Array</a>
+        <a href="dynamicArray.html">Dynamic Array</a>
+        <a href="stack.html">Stack</a>
+        <a href="queue.html">Queue</a>
+        <a href="sll.html">Singly Linked List</a>
+        <a href="dll.html">Doubly Linked List</a>
+        <a class="active" href="cactus.html">Cactus Stack</a>
+
+
+    </div>
+
+    <title>Data structure visualiser</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<h1>Cactus Stack</h1>
+<body onload="drawCactus()">
+<script src="draw.js"></script>
+
+<button onclick="popStack()">Pop Stack</button>
+<script src="cactusStack.js"></script>
+
+<button onclick="pushStack()">Push Stack</button>
+<script src="cactusStack.js"></script>
+
+<button onclick="drawBranch()">New Branch</button>
+<script src="cactusStack.js"></script>
+
+
+<button onclick="pushBranch()">Push Branch </button>
+<script src="cactusStack.js"></script>
+
+<div style="text-align: center">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+</body>
+</html>

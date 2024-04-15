@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="array.html">Array</a>
+        <a href="dynamicArray.html">Dynamic Array</a>
+        <a class="active" href="stack.html">Stack</a>
+        <a href="queue.html">Queue</a>
+        <a href="sll.html">Singly Linked List</a>
+        <a href="dll.html">Doubly Linked List</a>
+        <a href="cactus.html">Cactus Stack</a>
+
+    </div>
+
+    <title>Data structure visualiser</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<h1>Stack</h1>
+
+<form id="buildStack">
+    <label for="buildInput">Enter values (comma-separated):</label>
+    <input type="text" id="buildInput" required>
+    <button type="button" onclick="buildStack()">Build(x)</button>
+    <script src="stack.js"></script>
+
+</form>
+
+<form id="pushStack">
+    <label for="pushInput">Enter an integer:</label>
+    <input type="number" id="pushInput" required>
+    <button type="button" onclick="pushStack()">push()</button>
+    <script src="stack.js"></script>
+
+</form>
+
+<button onclick="popStack()">pop()</button>
+<script src="stack.js"></script>
+
+<dl>
+    <dt>The stack interface</dt>
+    <dt>push(x) </dt>
+    <dd>add x to the top of the stack.</dd>
+    <dt>pop() </dt>
+    <dd>remove and return the top of the stack </dd>
+    <dt>peek() </dt>
+    <dd>return (without removing) the top of the stack</dd>
+    <dt> build(X) </dt>
+    <dd> build a new stack</dd>
+    <dt>len()</dt>
+    <dd>return n (number of items stored)</dd>
+</dl>
+
+
+
+<div style="text-align: center">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+</body>
+</html>

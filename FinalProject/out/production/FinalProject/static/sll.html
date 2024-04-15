@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Singly Linked List</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="array.html">Array</a>
+        <a href="dynamicArray.html">Dynamic Array</a>
+        <a href="stack.html">Stack</a>
+        <a href="queue.html">Queue</a>
+        <a class="active" href="sll.html">Singly Linked List</a>
+        <a href="dll.html">Doubly Linked List</a>
+        <a href="cactus.html">Cactus Stack</a>
+
+    </div>
+
+    <title>Data structure visualiser</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<h1>Singly Linked List</h1>
+<body>
+
+<form id="createList">
+    <label for="createInput">Enter values (comma-separated):</label>
+    <input type="text" id="createInput" required>
+    <button type="button" onclick="createList()">create()</button>
+    <script src="sll.js"></script>
+
+</form>
+
+<form id="insert">
+
+    <label for="insertValueInput">Enter value:</label>
+    <input type="number" id="insertValueInput" required>
+
+    <label for="insertIndexInput">Enter index:</label>
+    <input type="number" id="insertIndexInput" required>
+
+
+    <button type="button" onclick="insertElement()">insert()</button>
+    <script src="sll.js"></script>
+
+</form>
+
+<form id="remove">
+
+    <label for="removeInput">Enter Index:</label>
+    <input type="number" id="removeInput" required>
+
+
+    <button type="button" onclick="removeElement()">remove()</button>
+    <script src="sll.js"></script>
+
+</form>
+
+<dl>
+    <dt>The Dynamic Sequence interface</dt>
+    <dt>get_at(i) </dt>
+    <dd>return xi</dd>
+    <dt>set_at(i,x) </dt>
+    <dd>set x to be new xi </dd>
+    <dt>insert at(i,x)</dt>
+    <dd>make x the new xi</dd>
+    <dt>remove_at(i) </dt>
+    <dd>remove and return xi</dd>
+    <dt>build(x)</dt>
+    <dd>build a new sequence in the specified order</dd>
+    <dt>len()</dt>
+    <dd>return the number of items stored</dd>
+</dl>
+
+<div style="text-align: center">
+    <canvas id="canvas" width="900" height="500"></canvas>
+</div>
+
+</body>
+</html>

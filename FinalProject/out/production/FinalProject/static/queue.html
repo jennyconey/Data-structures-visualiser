@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="array.html">Array</a>
+        <a href="dynamicArray.html">Dynamic Array</a>
+        <a href="stack.html">Stack</a>
+        <a class="active" href="queue.html">Queue</a>
+        <a href="sll.html">Singly Linked List</a>
+        <a href="dll.html">Doubly Linked List</a>
+        <a href="cactus.html">Cactus Stack</a>
+
+    </div>
+
+    <title>Data structure visualiser</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<h1>Queue</h1>
+
+<body>
+
+<form id="queueCreate">
+    <label for="queueInput">Enter values (comma-separated):</label>
+    <input type="text" id="queueInput" required>
+    <button type="button" onclick="createQueue()">Build(X)</button>
+    <script src="queue.js"></script>
+
+</form>
+
+<form id="enqueue">
+    <label for="enqueueInput">Enter an integer:</label>
+    <input type="number" id="enqueueInput" required>
+    <button type="button" onclick="enqueueQueue()">enqueue()</button>
+    <script src="queue.js"></script>
+
+</form>
+
+<form id="dequeue">
+
+    <button type="button" onclick="dequeueQueue()">dequeue()</button>
+    <script src="queue.js"></script>
+
+</form>
+
+
+<dl>
+    <dt>The Queue interface</dt>
+    <dt>enqueue(x)  </dt>
+    <dd>adds x to the back of the queue</dd>
+    <dt>dequeue() </dt>
+    <dd>removes and returns the front of the queue</dd>
+    <dt>first()</dt>
+    <dd>returns (without removing) the front</dd>
+    <dd>of the queue</dd>
+    <dt>len()</dt>
+    <dd>return n (number of items stored)</dd>
+</dl>
+<div style="text-align: center">
+    <canvas id="canvas" width="800" height="500"></canvas>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Array</title>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="array.html">Array</a>
+        <a class="active" href="dynamicArray.html">Dynamic Array</a>
+        <a href="stack.html">Stack</a>
+        <a href="queue.html">Queue</a>
+        <a href="sll.html">Singly Linked List</a>
+        <a href="dll.html">Doubly Linked List</a>
+        <a href="cactus.html">Cactus Stack</a>
+    </div>
+
+    <title>Data structure visualiser</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<h1>Dynamic Array</h1>
+
+<body>
+<div class="form-container">
+
+    <div class="form-row">
+
+        <form id="arrayCreate">
+            <label for="createInput">Enter values (comma-separated):</label>
+            <input type="text" id="createInput" required>
+            <button type="button" onclick="createArray()">Build(x)</button>
+            <script src="dynamicArray.js"></script>
+        </form>
+
+        <form id="insertLast">
+            <label for="insertLastInput">Enter value: </label>
+            <input type="number" id="insertLastInput" required>
+            <button type="button" onclick="insertLast()">Insert at the end</button>
+            <script src="dynamicArray.js"></script>
+        </form>
+    </div>
+</div>
+<!--
+    <dl>
+        <dt>The Dynamic Sequence interface</dt>
+        <dt>get_at(i) </dt>
+        <dd>return xi</dd>
+        <dt>set_at(i,x) </dt>
+        <dd>set x to be new xi </dd>
+        <dt>insert at(i,x)</dt>
+        <dd>make x the new xi</dd>
+        <dt>remove_at(i) </dt>
+        <dd>remove and return xi</dd>
+        <dt>build(x)</dt>
+        <dd>build a new sequence in the specified order</dd>
+    </dl>
+!-->
+
+
+<div style="text-align: center">
+    <canvas id="canvas" width="1000" height="500"></canvas>
+</div>
+
+
+</body>
+</html>

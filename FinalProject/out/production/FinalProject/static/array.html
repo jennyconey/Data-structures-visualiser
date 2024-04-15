@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="array.html">Array</a>
+        <a href="dynamicArray.html">Dynamic Array</a>
+
+        <a href="stack.html">Stack</a>
+        <a href="queue.html">Queue</a>
+        <a href="sll.html">Singly Linked List</a>
+        <a href="dll.html">Doubly Linked List</a>
+        <a href="cactus.html">Cactus Stack</a>
+
+
+    </div>
+
+    <title>data structure visualiser</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<h1>Array</h1>
+
+<!-- <body onload="drawArray()"> -->
+<body>
+<!-- <script src="draw.js"></script>-->
+
+<form id="arrayCreate">
+    <label for="createInput">Enter values (comma-separated):</label>
+    <input type="text" id="createInput" required>
+    <button type="button" onclick="createArray()">Build(x)</button>
+    <script src="array.js"></script>
+
+</form>
+
+<form id="arrayAppend">
+    <label for="insertValueInput">Enter value:</label>
+    <input type="number" id="insertValueInput" required>
+
+    <label for="insertIndexInput">Enter index:</label>
+    <input type="number" id="insertIndexInput" required>
+
+
+    <button type="button" onclick="appendArray()">set_at(i,x)</button>
+    <script src="array.js"></script>
+
+</form>
+
+<form id="arrayRemove">
+
+    <label for="removeIndexInput">Enter index:</label>
+    <input type="number" id="removeIndexInput" required>
+
+    <button type="button" onclick="removeElement()">remove()</button>
+    <script src="array.js"></script>
+
+</form>
+
+<dl>
+    <dt>The Static Sequence interface</dt>
+    <dt>build(x)  </dt>
+    <dd>make a sequence of the items of</dd>
+    <dd>X in their specified order</dd>
+    <dt>get_at(i) </dt>
+    <dd>return xi </dd>
+    <dt>set_at(i,x) </dt>
+    <dd>set xi to be x</dd>
+    <dt>len()</dt>
+    <dd>return n (number of items stored)</dd>
+</dl>
+
+
+<div style="text-align: center">
+    <canvas id="canvas" width="800" height="500"></canvas>
+    <script src="array.js"></script>
+
+</div>
+
+</body>
+</html>
